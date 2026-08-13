@@ -1,25 +1,22 @@
 candidate_pool_size: 45
 readme_shortlist_size: 15
 lookback_days: 45
-queries_per_category: 3
-
 categories:
   research:
     label: "🧪 科研探索"
     queries:
-      - 'topic:computational-materials OR topic:materials-science OR topic:atomistic-simulation'
-      - 'topic:molecular-dynamics OR topic:machine-learning-potential OR topic:dft'
-      - 'topic:scientific-computing OR topic:hpc OR topic:scientific-workflows'
+      - 'topic:materials-science'
+      - 'topic:atomistic-simulation'
+      - '"machine learning potential" in:name,description,readme'
   engineering:
     label: "🛠️ 工程成长"
     queries:
-      - 'topic:developer-tools OR topic:cli OR topic:software-engineering language:Python'
-      - 'topic:testing OR topic:static-analysis OR topic:github-actions'
-      - 'topic:distributed-systems OR topic:databases OR topic:compilers'
+      - 'topic:developer-tools language:Python'
+      - 'topic:testing language:Python'
+      - 'topic:static-analysis'
   fun:
     label: "🎮 今日整活"
     queries:
-      - 'topic:terminal-game OR topic:terminal-toy OR topic:creative-coding'
-      - 'topic:generative-art OR topic:data-visualization OR topic:hardware-hacking'
-      - 'topic:game OR topic:fun OR topic:unusual'
-
+      - 'topic:terminal-game'
+      - 'topic:creative-coding'
+      - 'topic:hardware-hacking'
