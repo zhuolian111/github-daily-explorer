@@ -1,0 +1,59 @@
+name: GitHub Daily Explorer
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 08:00 Asia/Shanghai / Singapore
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-daily-explorer
+  cancel-in-progress: false
+
+jobs:
+  daily-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install project
+        run: pip install .
+
+      - name: Generate and send digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODEL_PROVIDER: ${{ secrets.MODEL_PROVIDER }}
+          MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+          MODEL_BASE_URL: ${{ secrets.MODEL_BASE_URL }}
+          MODEL_NAME: ${{ secrets.MODEL_NAME }}
+          SMTP_HOST: ${{ vars.SMTP_HOST || 'smtp.qq.com' }}
+          SMTP_PORT: ${{ vars.SMTP_PORT || '465' }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_AUTH_CODE: ${{ secrets.SMTP_AUTH_CODE }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+        run: python main.py
+
+      - name: Commit recommendation history
+        run: |
+          if git diff --quiet -- data/history.json; then
+            echo "No history change to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.json
+          git commit -m "chore: update recommendation history"
+          git push
+
