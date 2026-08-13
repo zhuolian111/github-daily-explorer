@@ -1,4 +1,18 @@
 {
-  "recommendations": []
+  "recommendations": [
+    {
+      "full_name": "jasonwebb/morphogenesis-resources",
+      "url": "https://github.com/jasonwebb/morphogenesis-resources",
+      "category": "fun",
+      "recommendation_date": "2026-08-13",
+      "stars": 2273
+    },
+    {
+      "full_name": "hwangjongtaek/orc-camp",
+      "url": "https://github.com/hwangjongtaek/orc-camp",
+      "category": "engineering",
+      "recommendation_date": "2026-08-13",
+      "stars": 1
+    }
+  ]
 }
-
