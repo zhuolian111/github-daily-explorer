@@ -51,9 +51,14 @@ class ModelSelector:
                 {"role": "user", "content": prompt},
             ],
         }).encode("utf-8")
+        headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
+        if self.provider == "github":
+            headers.update({
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2026-03-10",
+            })
         request = urllib.request.Request(
-            f"{self.base_url}/chat/completions", data=body, method="POST",
-            headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
+            f"{self.base_url}/chat/completions", data=body, method="POST", headers=headers,
         )
         try:
             with urllib.request.urlopen(request, timeout=90) as response:
