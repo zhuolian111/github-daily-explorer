@@ -3,7 +3,7 @@ import json
 import pytest
 
 from github_daily_explorer.models import Repository
-from github_daily_explorer.selector import ModelResponseError, parse_recommendations
+from github_daily_explorer.selector import ModelResponseError, ModelSelector, parse_recommendations
 
 
 def valid_payload(**changes):
@@ -38,3 +38,12 @@ def test_rejects_invalid_json():
     with pytest.raises(ModelResponseError):
         parse_recommendations("not json", [])
 
+
+def test_github_provider_uses_github_token(monkeypatch):
+    monkeypatch.setenv("MODEL_PROVIDER", "github")
+    monkeypatch.setenv("MODEL_NAME", "openai/gpt-4.1")
+    monkeypatch.setenv("GITHUB_TOKEN", "github-actions-token")
+    monkeypatch.delenv("MODEL_API_KEY", raising=False)
+    selector = ModelSelector()
+    assert selector.api_key == "github-actions-token"
+    assert selector.base_url == "https://models.github.ai/inference"

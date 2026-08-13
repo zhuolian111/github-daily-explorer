@@ -10,7 +10,7 @@
 → 渲染 HTML + 纯文本 → SMTP 发送成功 → 写入 history.json
 ```
 
-先发送、后记历史很重要：如果 QQ 邮箱临时失败，下一次重试不会误以为这些项目已经推荐过。模型可以少选低质量类别，但不能为了凑数乱选，也不能选候选池之外的仓库。
+先发送、后记历史很重要：如果 QQ 邮箱临时失败，下一次重试不会误以为这些项目已经推荐过。模型可以少选低质量类别，但不能为了凑数乱选，也不能选候选池之外的仓库。默认部署可使用 GitHub Models 的免费额度和 Actions 自动生成的 `GITHUB_TOKEN`，无需购买 OpenAI API。
 
 ## 文件结构
 
@@ -74,16 +74,18 @@ python main.py
 
 完整运行会发信；只有发送成功后才更新 `data/history.json`。
 
-## 选择 OpenAI 或 DeepSeek
+## 选择模型来源
 
-两者都走 OpenAI-compatible `/chat/completions` 接口，provider 没有写死。
+所有来源都走 OpenAI-compatible `/chat/completions` 接口，provider 没有写死。个人 V1 推荐 GitHub Models：仍使用 OpenAI 模型，但由 GitHub 提供有限的免费推理额度。
 
-| 变量 | OpenAI 示例 | DeepSeek 示例 |
-|---|---|---|
-| `MODEL_PROVIDER` | `openai` | `deepseek` |
-| `MODEL_NAME` | `gpt-4.1-mini` | `deepseek-chat` |
-| `MODEL_BASE_URL` | 可省略，默认 `https://api.openai.com/v1` | 可省略，默认 `https://api.deepseek.com` |
-| `MODEL_API_KEY` | 对应平台密钥 | 对应平台密钥 |
+| 变量 | GitHub Models（推荐） | OpenAI API | DeepSeek API |
+|---|---|---|---|
+| `MODEL_PROVIDER` | `github` | `openai` | `deepseek` |
+| `MODEL_NAME` | `openai/gpt-4.1` | `gpt-4.1-mini` | `deepseek-chat` |
+| `MODEL_BASE_URL` | 可省略 | 可省略 | 可省略 |
+| `MODEL_API_KEY` | Actions 中不需要 | OpenAI API key | DeepSeek API key |
+
+GitHub Models 在 Actions 中读取内置 `GITHUB_TOKEN`，workflow 已声明 `models: read`。免费额度有速率和每日请求限制，适合每天一次的个人项目；若额度耗尽且未主动开启付费，调用会停止而不是自动产生模型费用。本地运行 GitHub Models 时，token 需要 models 权限。
 
 如果使用兼容代理或自建网关，才需要设置 `MODEL_BASE_URL`。不要把 key 写进代码、命令行参数、配置文件或 issue。
 
@@ -104,7 +106,7 @@ python main.py
 必须创建这些 **Repository secrets**：
 
 - `MODEL_PROVIDER`：`openai` 或 `deepseek`
-- `MODEL_API_KEY`：对应模型服务密钥
+- `MODEL_API_KEY`：仅直接使用 OpenAI/DeepSeek API 时需要；GitHub Models 不需要
 - `MODEL_NAME`：实际模型名
 - `SMTP_USER`：QQ 邮箱地址
 - `SMTP_AUTH_CODE`：QQ SMTP 授权码
@@ -161,4 +163,3 @@ pytest
 ## 安全边界
 
 `.env`、输出预览、缓存和虚拟环境已加入 `.gitignore`。代码不会接受命令行 secret，也不会把 secret 写入邮件、历史或日志。提交前仍建议运行 `git diff --cached`，确认没有误加入本地凭据。
-

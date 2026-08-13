@@ -22,15 +22,18 @@ class ModelSelector:
     DEFAULT_BASES = {
         "openai": "https://api.openai.com/v1",
         "deepseek": "https://api.deepseek.com",
+        "github": "https://models.github.ai/inference",
     }
 
     def __init__(self) -> None:
         self.provider = os.getenv("MODEL_PROVIDER", "openai").lower().strip()
         self.api_key = os.getenv("MODEL_API_KEY", "")
+        if self.provider == "github":
+            self.api_key = self.api_key or os.getenv("GITHUB_TOKEN", "")
         self.model = os.getenv("MODEL_NAME", "")
         self.base_url = os.getenv("MODEL_BASE_URL", "").rstrip("/") or self.DEFAULT_BASES.get(self.provider, "")
         if self.provider not in self.DEFAULT_BASES:
-            raise ModelConfigError("MODEL_PROVIDER 仅支持 openai 或 deepseek")
+            raise ModelConfigError("MODEL_PROVIDER 仅支持 openai、deepseek 或 github")
         missing = [name for name, value in (("MODEL_API_KEY", self.api_key), ("MODEL_NAME", self.model)) if not value]
         if missing:
             raise ModelConfigError(f"缺少模型配置: {', '.join(missing)}")
@@ -134,4 +137,3 @@ def parse_recommendations(text: str, repositories: list[Repository]) -> list[Rec
     if recommendations and champions != 1:
         raise ModelResponseError("必须且只能有一个今日最推荐")
     return recommendations
-
