@@ -23,6 +23,12 @@ def test_parse_model_json():
     assert parsed[0].match_score == 8
 
 
+def test_parse_json_surrounded_by_model_commentary():
+    repos = [Repository("org/tool", "https://github.com/org/tool", category="engineering")]
+    parsed = parse_recommendations(f"以下是结果：\n{valid_payload()}\n希望有帮助。", repos)
+    assert parsed[0].full_name == "org/tool"
+
+
 @pytest.mark.parametrize("changes", [
     {"category": "research"},
     {"category": "wrong"},

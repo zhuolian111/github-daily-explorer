@@ -110,8 +110,21 @@ def _extract_json(text: str) -> dict:
         cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", cleaned, flags=re.IGNORECASE)
     try:
         value = json.loads(cleaned)
-    except json.JSONDecodeError as exc:
-        raise ModelResponseError("模型没有返回合法 JSON") from exc
+    except json.JSONDecodeError as original_error:
+        decoder = json.JSONDecoder()
+        value = None
+        for index, character in enumerate(cleaned):
+            if character != "{":
+                continue
+            try:
+                candidate, _ = decoder.raw_decode(cleaned[index:])
+            except json.JSONDecodeError:
+                continue
+            if isinstance(candidate, dict):
+                value = candidate
+                break
+        if value is None:
+            raise ModelResponseError("模型没有返回合法 JSON") from original_error
     if not isinstance(value, dict):
         raise ModelResponseError("模型 JSON 顶层必须是对象")
     return value
