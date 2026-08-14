@@ -13,6 +13,27 @@
       "category": "engineering",
       "recommendation_date": "2026-08-13",
       "stars": 1
+    },
+    {
+      "full_name": "paymantohidifar/ai-ml-master",
+      "url": "https://github.com/paymantohidifar/ai-ml-master",
+      "category": "research",
+      "recommendation_date": "2026-08-14",
+      "stars": 1
+    },
+    {
+      "full_name": "koepalex/Crow-s-Nest-MQTT",
+      "url": "https://github.com/koepalex/Crow-s-Nest-MQTT",
+      "category": "engineering",
+      "recommendation_date": "2026-08-14",
+      "stars": 16
+    },
+    {
+      "full_name": "freaxnx01/game-acronym-quiz",
+      "url": "https://github.com/freaxnx01/game-acronym-quiz",
+      "category": "fun",
+      "recommendation_date": "2026-08-14",
+      "stars": 0
     }
   ]
 }
