@@ -34,6 +34,20 @@
       "category": "fun",
       "recommendation_date": "2026-08-14",
       "stars": 0
+    },
+    {
+      "full_name": "PB2204/Logix",
+      "url": "https://github.com/PB2204/Logix",
+      "category": "research",
+      "recommendation_date": "2026-08-16",
+      "stars": 0
+    },
+    {
+      "full_name": "Kavennesh/mcpscan",
+      "url": "https://github.com/Kavennesh/mcpscan",
+      "category": "engineering",
+      "recommendation_date": "2026-08-16",
+      "stars": 0
     }
   ]
 }
