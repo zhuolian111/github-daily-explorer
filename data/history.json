@@ -69,6 +69,20 @@
       "category": "engineering",
       "recommendation_date": "2026-08-19",
       "stars": 39
+    },
+    {
+      "full_name": "aherriot/persian-practice",
+      "url": "https://github.com/aherriot/persian-practice",
+      "category": "engineering",
+      "recommendation_date": "2026-08-20",
+      "stars": 0
+    },
+    {
+      "full_name": "theekun4l/dbz_rpg_game",
+      "url": "https://github.com/theekun4l/dbz_rpg_game",
+      "category": "fun",
+      "recommendation_date": "2026-08-20",
+      "stars": 0
     }
   ]
 }
