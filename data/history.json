@@ -83,6 +83,13 @@
       "category": "fun",
       "recommendation_date": "2026-08-20",
       "stars": 0
+    },
+    {
+      "full_name": "callumvidler/callumvidler.github.io",
+      "url": "https://github.com/callumvidler/callumvidler.github.io",
+      "category": "engineering",
+      "recommendation_date": "2026-08-21",
+      "stars": 0
     }
   ]
 }
