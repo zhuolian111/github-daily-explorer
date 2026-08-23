@@ -90,6 +90,20 @@
       "category": "engineering",
       "recommendation_date": "2026-08-21",
       "stars": 0
+    },
+    {
+      "full_name": "AmirrezaFarnamTaheri/Computational-Economics-and-Data-Science",
+      "url": "https://github.com/AmirrezaFarnamTaheri/Computational-Economics-and-Data-Science",
+      "category": "research",
+      "recommendation_date": "2026-08-23",
+      "stars": 0
+    },
+    {
+      "full_name": "Waremderme/GateSentinel-C2-RemoteTool",
+      "url": "https://github.com/Waremderme/GateSentinel-C2-RemoteTool",
+      "category": "engineering",
+      "recommendation_date": "2026-08-23",
+      "stars": 25
     }
   ]
 }
