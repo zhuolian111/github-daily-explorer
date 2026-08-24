@@ -104,6 +104,27 @@
       "category": "engineering",
       "recommendation_date": "2026-08-23",
       "stars": 25
+    },
+    {
+      "full_name": "MaximilianHeinrich/w-seminar",
+      "url": "https://github.com/MaximilianHeinrich/w-seminar",
+      "category": "research",
+      "recommendation_date": "2026-08-24",
+      "stars": 0
+    },
+    {
+      "full_name": "Olivaire/sleep-duck-eye",
+      "url": "https://github.com/Olivaire/sleep-duck-eye",
+      "category": "engineering",
+      "recommendation_date": "2026-08-24",
+      "stars": 0
+    },
+    {
+      "full_name": "mohandadelh09-commits/Quiz-Game",
+      "url": "https://github.com/mohandadelh09-commits/Quiz-Game",
+      "category": "fun",
+      "recommendation_date": "2026-08-24",
+      "stars": 0
     }
   ]
 }
