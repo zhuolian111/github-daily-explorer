@@ -125,6 +125,20 @@
       "category": "fun",
       "recommendation_date": "2026-08-24",
       "stars": 0
+    },
+    {
+      "full_name": "oktay-cesur/lecture-notes",
+      "url": "https://github.com/oktay-cesur/lecture-notes",
+      "category": "research",
+      "recommendation_date": "2026-08-25",
+      "stars": 3
+    },
+    {
+      "full_name": "vaugouin/embedding-query",
+      "url": "https://github.com/vaugouin/embedding-query",
+      "category": "engineering",
+      "recommendation_date": "2026-08-25",
+      "stars": 0
     }
   ]
 }
