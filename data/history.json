@@ -139,6 +139,20 @@
       "category": "engineering",
       "recommendation_date": "2026-08-25",
       "stars": 0
+    },
+    {
+      "full_name": "drmaryanupama-max/Learn-life-sciences-with-Anupama",
+      "url": "https://github.com/drmaryanupama-max/Learn-life-sciences-with-Anupama",
+      "category": "research",
+      "recommendation_date": "2026-08-26",
+      "stars": 0
+    },
+    {
+      "full_name": "tobias-weiss-ai-xr/nix-best-practices",
+      "url": "https://github.com/tobias-weiss-ai-xr/nix-best-practices",
+      "category": "engineering",
+      "recommendation_date": "2026-08-26",
+      "stars": 0
     }
   ]
 }
