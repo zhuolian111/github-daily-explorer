@@ -181,6 +181,13 @@
       "category": "engineering",
       "recommendation_date": "2026-08-30",
       "stars": 0
+    },
+    {
+      "full_name": "visoar/mqtt-acl-linter",
+      "url": "https://github.com/visoar/mqtt-acl-linter",
+      "category": "engineering",
+      "recommendation_date": "2026-08-31",
+      "stars": 0
     }
   ]
 }
