@@ -188,6 +188,13 @@
       "category": "engineering",
       "recommendation_date": "2026-08-31",
       "stars": 0
+    },
+    {
+      "full_name": "akougkas/AutoTLDR",
+      "url": "https://github.com/akougkas/AutoTLDR",
+      "category": "engineering",
+      "recommendation_date": "2026-09-01",
+      "stars": 0
     }
   ]
 }
