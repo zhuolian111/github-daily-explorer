@@ -195,6 +195,20 @@
       "category": "engineering",
       "recommendation_date": "2026-09-01",
       "stars": 0
+    },
+    {
+      "full_name": "api-evangelist/scalable-platforms",
+      "url": "https://github.com/api-evangelist/scalable-platforms",
+      "category": "engineering",
+      "recommendation_date": "2026-09-02",
+      "stars": 0
+    },
+    {
+      "full_name": "chandraniraychowdhury5/Mathematics-for-Data-Science",
+      "url": "https://github.com/chandraniraychowdhury5/Mathematics-for-Data-Science",
+      "category": "research",
+      "recommendation_date": "2026-09-02",
+      "stars": 0
     }
   ]
 }
