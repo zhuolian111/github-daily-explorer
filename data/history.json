@@ -216,6 +216,13 @@
       "category": "research",
       "recommendation_date": "2026-09-03",
       "stars": 0
+    },
+    {
+      "full_name": "vignesh-off/Tenant-Aware-Storage-Capacity-Forecasting-for-SaaS",
+      "url": "https://github.com/vignesh-off/Tenant-Aware-Storage-Capacity-Forecasting-for-SaaS",
+      "category": "engineering",
+      "recommendation_date": "2026-09-04",
+      "stars": 0
     }
   ]
 }
