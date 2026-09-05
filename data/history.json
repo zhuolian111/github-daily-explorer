@@ -223,6 +223,27 @@
       "category": "engineering",
       "recommendation_date": "2026-09-04",
       "stars": 0
+    },
+    {
+      "full_name": "siddharthhsinghh/Notes",
+      "url": "https://github.com/siddharthhsinghh/Notes",
+      "category": "research",
+      "recommendation_date": "2026-09-05",
+      "stars": 0
+    },
+    {
+      "full_name": "BHASKAR4567/Github-trending-repository-analysis-using-webscraping-with-eda",
+      "url": "https://github.com/BHASKAR4567/Github-trending-repository-analysis-using-webscraping-with-eda",
+      "category": "engineering",
+      "recommendation_date": "2026-09-05",
+      "stars": 0
+    },
+    {
+      "full_name": "rozorozojai-maker/Ominiai.com",
+      "url": "https://github.com/rozorozojai-maker/Ominiai.com",
+      "category": "fun",
+      "recommendation_date": "2026-09-05",
+      "stars": 0
     }
   ]
 }
