@@ -251,6 +251,13 @@
       "category": "engineering",
       "recommendation_date": "2026-09-06",
       "stars": 0
+    },
+    {
+      "full_name": "edriso/nt-trainings",
+      "url": "https://github.com/edriso/nt-trainings",
+      "category": "engineering",
+      "recommendation_date": "2026-09-07",
+      "stars": 1
     }
   ]
 }
