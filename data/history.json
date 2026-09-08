@@ -258,6 +258,13 @@
       "category": "engineering",
       "recommendation_date": "2026-09-07",
       "stars": 1
+    },
+    {
+      "full_name": "minireference/ministats",
+      "url": "https://github.com/minireference/ministats",
+      "category": "engineering",
+      "recommendation_date": "2026-09-08",
+      "stars": 3
     }
   ]
 }
