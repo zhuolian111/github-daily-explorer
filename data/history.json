@@ -265,6 +265,13 @@
       "category": "engineering",
       "recommendation_date": "2026-09-08",
       "stars": 3
+    },
+    {
+      "full_name": "jgt87/copilot-studio-mcp",
+      "url": "https://github.com/jgt87/copilot-studio-mcp",
+      "category": "engineering",
+      "recommendation_date": "2026-09-09",
+      "stars": 0
     }
   ]
 }
