@@ -272,6 +272,20 @@
       "category": "engineering",
       "recommendation_date": "2026-09-09",
       "stars": 0
+    },
+    {
+      "full_name": "dburhanna/atcs-unit0-demo",
+      "url": "https://github.com/dburhanna/atcs-unit0-demo",
+      "category": "research",
+      "recommendation_date": "2026-09-10",
+      "stars": 0
+    },
+    {
+      "full_name": "reeceholland/ros2_fault_injection",
+      "url": "https://github.com/reeceholland/ros2_fault_injection",
+      "category": "engineering",
+      "recommendation_date": "2026-09-10",
+      "stars": 1
     }
   ]
 }
