@@ -342,6 +342,20 @@
       "category": "engineering",
       "recommendation_date": "2026-09-19",
       "stars": 0
+    },
+    {
+      "full_name": "jasocami/realistic-test-data",
+      "url": "https://github.com/jasocami/realistic-test-data",
+      "category": "engineering",
+      "recommendation_date": "2026-09-20",
+      "stars": 0
+    },
+    {
+      "full_name": "symworx/symkit",
+      "url": "https://github.com/symworx/symkit",
+      "category": "fun",
+      "recommendation_date": "2026-09-20",
+      "stars": 0
     }
   ]
 }
