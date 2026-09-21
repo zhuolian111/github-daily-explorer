@@ -356,6 +356,13 @@
       "category": "fun",
       "recommendation_date": "2026-09-20",
       "stars": 0
+    },
+    {
+      "full_name": "canstralian/amnesic-pi",
+      "url": "https://github.com/canstralian/amnesic-pi",
+      "category": "engineering",
+      "recommendation_date": "2026-09-21",
+      "stars": 1
     }
   ]
 }
