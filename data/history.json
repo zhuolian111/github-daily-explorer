@@ -384,6 +384,13 @@
       "category": "engineering",
       "recommendation_date": "2026-09-25",
       "stars": 0
+    },
+    {
+      "full_name": "jurschuijt/quiz-app",
+      "url": "https://github.com/jurschuijt/quiz-app",
+      "category": "engineering",
+      "recommendation_date": "2026-09-26",
+      "stars": 0
     }
   ]
 }
