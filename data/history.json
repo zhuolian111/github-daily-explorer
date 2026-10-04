@@ -433,6 +433,20 @@
       "category": "engineering",
       "recommendation_date": "2026-10-03",
       "stars": 0
+    },
+    {
+      "full_name": "somyaranawat20/GATE-Notes",
+      "url": "https://github.com/somyaranawat20/GATE-Notes",
+      "category": "research",
+      "recommendation_date": "2026-10-04",
+      "stars": 0
+    },
+    {
+      "full_name": "satdevkumar021-glitch/android-interview-study-material",
+      "url": "https://github.com/satdevkumar021-glitch/android-interview-study-material",
+      "category": "engineering",
+      "recommendation_date": "2026-10-04",
+      "stars": 1
     }
   ]
 }
