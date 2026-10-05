@@ -447,6 +447,13 @@
       "category": "engineering",
       "recommendation_date": "2026-10-04",
       "stars": 1
+    },
+    {
+      "full_name": "arm-pz/deep-tutor",
+      "url": "https://github.com/arm-pz/deep-tutor",
+      "category": "engineering",
+      "recommendation_date": "2026-10-05",
+      "stars": 0
     }
   ]
 }
