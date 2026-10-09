@@ -475,6 +475,20 @@
       "category": "engineering",
       "recommendation_date": "2026-10-08",
       "stars": 0
+    },
+    {
+      "full_name": "pktradingview3-ops/robinhood55-conventions",
+      "url": "https://github.com/pktradingview3-ops/robinhood55-conventions",
+      "category": "engineering",
+      "recommendation_date": "2026-10-09",
+      "stars": 0
+    },
+    {
+      "full_name": "jmi-openatom/openatom-motion",
+      "url": "https://github.com/jmi-openatom/openatom-motion",
+      "category": "fun",
+      "recommendation_date": "2026-10-09",
+      "stars": 0
     }
   ]
 }
