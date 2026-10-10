@@ -489,6 +489,27 @@
       "category": "fun",
       "recommendation_date": "2026-10-09",
       "stars": 0
+    },
+    {
+      "full_name": "Jackela/CS-Knowledge-Graph",
+      "url": "https://github.com/Jackela/CS-Knowledge-Graph",
+      "category": "research",
+      "recommendation_date": "2026-10-10",
+      "stars": 0
+    },
+    {
+      "full_name": "1wblo/halma",
+      "url": "https://github.com/1wblo/halma",
+      "category": "engineering",
+      "recommendation_date": "2026-10-10",
+      "stars": 0
+    },
+    {
+      "full_name": "runmu-sh/ext-lore",
+      "url": "https://github.com/runmu-sh/ext-lore",
+      "category": "fun",
+      "recommendation_date": "2026-10-10",
+      "stars": 0
     }
   ]
 }
