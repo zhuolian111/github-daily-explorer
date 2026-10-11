@@ -510,6 +510,13 @@
       "category": "fun",
       "recommendation_date": "2026-10-10",
       "stars": 0
+    },
+    {
+      "full_name": "loumzg/Job-Bot",
+      "url": "https://github.com/loumzg/Job-Bot",
+      "category": "engineering",
+      "recommendation_date": "2026-10-11",
+      "stars": 0
     }
   ]
 }
