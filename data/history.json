@@ -517,6 +517,20 @@
       "category": "engineering",
       "recommendation_date": "2026-10-11",
       "stars": 0
+    },
+    {
+      "full_name": "cmsrrent/documentation",
+      "url": "https://github.com/cmsrrent/documentation",
+      "category": "engineering",
+      "recommendation_date": "2026-10-12",
+      "stars": 1
+    },
+    {
+      "full_name": "Gustavo3245/Computer-Sciense",
+      "url": "https://github.com/Gustavo3245/Computer-Sciense",
+      "category": "research",
+      "recommendation_date": "2026-10-12",
+      "stars": 0
     }
   ]
 }
