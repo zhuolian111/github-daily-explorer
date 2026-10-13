@@ -531,6 +531,13 @@
       "category": "research",
       "recommendation_date": "2026-10-12",
       "stars": 0
+    },
+    {
+      "full_name": "NafisOfficial/sentimental-analysis",
+      "url": "https://github.com/NafisOfficial/sentimental-analysis",
+      "category": "engineering",
+      "recommendation_date": "2026-10-13",
+      "stars": 0
     }
   ]
 }
