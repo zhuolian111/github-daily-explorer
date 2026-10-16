@@ -545,6 +545,20 @@
       "category": "fun",
       "recommendation_date": "2026-10-14",
       "stars": 0
+    },
+    {
+      "full_name": "nolan-alexander/nolan-alexander.github.io",
+      "url": "https://github.com/nolan-alexander/nolan-alexander.github.io",
+      "category": "engineering",
+      "recommendation_date": "2026-10-16",
+      "stars": 0
+    },
+    {
+      "full_name": "Priyanshi8923/VITyarthi-Python-Quest",
+      "url": "https://github.com/Priyanshi8923/VITyarthi-Python-Quest",
+      "category": "fun",
+      "recommendation_date": "2026-10-16",
+      "stars": 0
     }
   ]
 }
