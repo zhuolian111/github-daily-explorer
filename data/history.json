@@ -566,6 +566,20 @@
       "category": "engineering",
       "recommendation_date": "2026-10-17",
       "stars": 2
+    },
+    {
+      "full_name": "shiwali-saraswat-dev/javascript-from-scratch",
+      "url": "https://github.com/shiwali-saraswat-dev/javascript-from-scratch",
+      "category": "engineering",
+      "recommendation_date": "2026-10-18",
+      "stars": 0
+    },
+    {
+      "full_name": "sammy-world1304/Actuarial-project-hub",
+      "url": "https://github.com/sammy-world1304/Actuarial-project-hub",
+      "category": "research",
+      "recommendation_date": "2026-10-18",
+      "stars": 0
     }
   ]
 }
