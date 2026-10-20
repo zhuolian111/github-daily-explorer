@@ -580,6 +580,13 @@
       "category": "research",
       "recommendation_date": "2026-10-18",
       "stars": 0
+    },
+    {
+      "full_name": "geekychris/kafkadatagenerator",
+      "url": "https://github.com/geekychris/kafkadatagenerator",
+      "category": "engineering",
+      "recommendation_date": "2026-10-20",
+      "stars": 0
     }
   ]
 }
