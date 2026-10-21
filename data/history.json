@@ -587,6 +587,13 @@
       "category": "engineering",
       "recommendation_date": "2026-10-20",
       "stars": 0
+    },
+    {
+      "full_name": "OMDATTA/fake-news-misinformation-detector",
+      "url": "https://github.com/OMDATTA/fake-news-misinformation-detector",
+      "category": "engineering",
+      "recommendation_date": "2026-10-21",
+      "stars": 0
     }
   ]
 }
