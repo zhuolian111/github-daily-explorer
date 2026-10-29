@@ -643,6 +643,13 @@
       "category": "engineering",
       "recommendation_date": "2026-10-28",
       "stars": 0
+    },
+    {
+      "full_name": "Bertezz/lightspeed-mcp-cli",
+      "url": "https://github.com/Bertezz/lightspeed-mcp-cli",
+      "category": "engineering",
+      "recommendation_date": "2026-10-29",
+      "stars": 1
     }
   ]
 }
