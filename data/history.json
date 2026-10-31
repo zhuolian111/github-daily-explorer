@@ -657,6 +657,13 @@
       "category": "engineering",
       "recommendation_date": "2026-10-30",
       "stars": 1
+    },
+    {
+      "full_name": "marle3003/mokapi-payment-workflow",
+      "url": "https://github.com/marle3003/mokapi-payment-workflow",
+      "category": "engineering",
+      "recommendation_date": "2026-10-31",
+      "stars": 0
     }
   ]
 }
