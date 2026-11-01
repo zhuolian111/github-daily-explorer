@@ -1,0 +1,26 @@
+name: Send Literature Sample
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-sample:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install .
+      - name: Send one sample email
+        env:
+          SMTP_HOST: ${{ vars.SMTP_HOST || 'smtp.qq.com' }}
+          SMTP_PORT: ${{ vars.SMTP_PORT || '465' }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_AUTH_CODE: ${{ secrets.SMTP_AUTH_CODE }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+        run: python scripts/send_literature_sample.py
+
